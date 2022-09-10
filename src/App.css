@@ -12,7 +12,38 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.container {
+  width: auto;
+  height: 300px;
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  outline: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show{
+  margin-left: 50px;
+}
+.walletButton{
+  
+  
+  width: 10%;
+  font-size: 8pt;
+  font-family: tahoma;
+ 
+  margin-right: 50px;
+  
+  position:absolute;
+  top: 10px;
+  right:10px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
