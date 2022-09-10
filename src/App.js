@@ -143,7 +143,7 @@ function App() {
        <div>
         <ul>
         <li>
-            <p id="status">{transferStatus}</p>
+            <a id="status" href={transferStatus} target="_blank">{transferStatus}</a>
           </li>
           <li>
           <p id="status">{status}</p>

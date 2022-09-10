@@ -50,7 +50,7 @@ export const connectWallet = async () => {
         });
         return {
          
-          status: txHash,
+          status: "https://rinkeby.etherscan.io/tx/"+txHash,
         };
       } catch (error) {
         return {
