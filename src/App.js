@@ -40,7 +40,13 @@ function App() {
 
   const onTransferBalancePressed = async () => {
     const { status } = await sendEther(walletAddress, transferAddress, transferAmount);
-    setTransferStatus(status);
+    if(String(status).substring(0, 6)=="https:")
+    {
+      setTransferStatus(<a id="status" href={status} target="_blank">{status}</a>);
+    }else{
+      setTransferStatus(<p id="status">{status}</p>);
+    }
+    
   };
   function addWalletListener() {
     if (window.ethereum) {
@@ -143,7 +149,7 @@ function App() {
        <div>
         <ul>
         <li>
-            <a id="status" href={transferStatus} target="_blank">{transferStatus}</a>
+            {transferStatus}
           </li>
           <li>
           <p id="status">{status}</p>
