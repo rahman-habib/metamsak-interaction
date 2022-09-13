@@ -1,69 +1,62 @@
-.App {
-  text-align: center;
+.container{
+  margin-top: 40px;
+  padding-top: 40px;
+
+}
+.col-lg-6{
+  border: solid 1px;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.main{
+  width: 100%;
+  height: 100vh ;
+
+  position:absolute;
+  top: 0px;
+  right:0px;
+  
+}
+a{
+  color: bisque !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.container {
-  width: auto;
-  height: 300px;
-  margin-top: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-  outline: solid 1px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.show{
-  margin-left: 50px;
-}
+
 .walletButton{
   
   
-  width: 10%;
+  width: 20%;
   font-size: 8pt;
   font-family: tahoma;
- 
+ background-color: rgb(172, 172, 223);
   margin-right: 50px;
-  
+  border-radius: 2rem;
+  padding: 10px;
   position:absolute;
   top: 10px;
   right:10px;
 }
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+.baln{
+  
+  
+ 
+  font-size: 14pt;
+  font-family: tahoma;
+  background-color: rgb(172, 172, 223);
+  padding: 10px;
+  margin-left: 50px;
+  border-radius: 2rem;
+  
+  position:absolute;
+  top: 10px;
+  left:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
